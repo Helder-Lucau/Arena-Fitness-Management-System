@@ -8,7 +8,7 @@ const Dashboard = () => {
             <div className="flex flex-row bg-neutral-100 h-screen w-screen overflow-hidden">
                 <Sidebar />
             </div>
-            
+
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Logo from '../../assets/logo.jpg'
+import Logo from '../assets/logo.jpg'
 import { DASHBOARD_SIDEBAR_LINKS } from './Navigation'
 import classNames from 'classnames'
 import { HiOutlineLogout } from 'react-icons/hi'
@@ -15,6 +15,7 @@ export default function Sidebar() {
         <img src={Logo} alt='/' className='h-10 object-cover' />
         <span className='text-orange-500 font-bold capitalize font-oswald text-lg'>arena fitness center.</span>
       </div>
+      {/* Creating the list by iterating the data stored in Navigation.jsx */}
       <div className='flex-1 py-8 flex flex-col gap-0.5'>
         {DASHBOARD_SIDEBAR_LINKS.map((item) => (
           <SidebarLink key={item.key} item={item} />
